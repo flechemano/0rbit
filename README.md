@@ -47,10 +47,10 @@ aos orbit --cron 30-seconds
 
 > File ismi: `0rbit-Price-Feed.lua` olacak ve aşağıdaki kodu içine girip ctrl + s ile kaydediyoruz
 
-> Kodda 2 yer düzenlencek, `PID XXXXXXXX` yazan yere orbit process id - `Handlers.add("GITHUB",` yazan yere github account yazıyoruz.
+> Kodda 2 yer düzenlencek, `PID XXXXXXXX` yazan yere orbit process id - `Handlers.add("flechemano",` yazan yere github account yazıyoruz.
 
 ```console
--- PID XXXXXXXXXXXXXXXX
+-- PID MCcQIso4wo_WicAa8DKUWZYc2jOkfe8RwyrAK6o6cuk
 
 local json = require("json")
 
@@ -67,7 +67,7 @@ function handleError(msg, errorMessage)
     })
 end
 
-Handlers.add("GITHUB",
+Handlers.add("flechemano",
     Handlers.utils.hasMatchingTag("Action", "Sponsored-Get-Request"),
     function(msg)
         local token = msg.Tags.Token
